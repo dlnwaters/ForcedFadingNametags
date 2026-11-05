@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "mandatory": true,
+  "fullOpacityDistance": 20,
+  "fadeStartDistance": 30,
+  "maximumVisibilityDistance": 100,
+  "maximumOpacity": 1.0,
+  "minimumOpacity": 0.0,
+  "fadeSmoothness": "linear",
+  "updateFrequencyHz": 30
+}
+
