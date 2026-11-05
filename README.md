@@ -10,11 +10,11 @@ The server sends the config to the client upon joining, forces UI config onto th
 
 Copy `Resources` folder into the matching `Resources` folders of a BeamMP server.
 
-##Config
+## Config
 
 Edit `Resources/Server/ForcedFadingNametags/config.json`
 
-##References
+## References
 
 - [BeamMP server Lua reference](https://docs.beammp.com/scripting/server/latest-server-reference/)
 - [BeamMP server mod installation structure](https://docs.beammp.com/guides/mod-creation/server/getting-started/)
