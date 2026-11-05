@@ -1,7 +1,3 @@
--- Forced Fading Nametags server plugin (BeamMP Server 3.x)
--- The server distributes policy only. The client companion applies it to
--- BeamMP's local native nametag renderer.
-
 local EVENT_CONFIG = "FFN_Config"
 local CONFIG_PATH = "Resources/Server/ForcedFadingNametags/config.json"
 local DEFAULTS = {
@@ -83,8 +79,7 @@ local function onPlayerJoin(playerID)
 end
 
 local function onPlayerDisconnect(playerID)
-  -- There is no per-player state to retain. The client extension stops being
-  -- relevant when BeamMP unloads the connected session.
+  
 end
 
 local function onConsoleInput(input)
@@ -110,4 +105,3 @@ function FFN_onConsoleInput(input) return onConsoleInput(input) end
 
 MP.RegisterEvent("onInit", "FFN_onInit")
 function FFN_onInit() onInit() end
-
