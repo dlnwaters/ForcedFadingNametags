@@ -1,4 +1,3 @@
--- Server-authoritative policy adapter for BeamMP's native nametag renderer.
 local M = {}
 local EVENT_CONFIG = "FFN_Config"
 local config = nil
@@ -32,9 +31,6 @@ local function applyPolicy()
   end
 
   if config.enabled then
-    -- Keep the visible settings UI and persisted values aligned when possible.
-    -- The getValue policy above remains authoritative if a local menu changes
-    -- these while connected.
     settings.setValue("hideNameTags", false)
     settings.setValue("nameTagFadeEnabled", true)
     settings.setValue("nameTagFadeInvert", false)
@@ -62,8 +58,6 @@ local function receiveConfig(data)
 end
 
 function M.onUpdate(dt)
-  -- The renderer reads settings every frame. This reapplies persisted values
-  -- after BeamMP UI changes; the getter hook keeps the policy authoritative.
   if config and config.enabled then applyPolicy() end
 end
 
@@ -86,4 +80,3 @@ function M.onExtensionUnloaded()
 end
 
 return M
-
