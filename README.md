@@ -8,7 +8,7 @@ The server sends the config to the client upon joining, forces UI config onto th
 
 ## Installation
 
-Copy `Resources/Client/ForcedFadingNametags.zip` and the `Resources/Server/ForcedFadingNametags` directory into the matching `Resources` folders of a BeamMP server.
+Copy `Resources` folder into the matching `Resources` folders of a BeamMP server.
 
 ##Config
 
